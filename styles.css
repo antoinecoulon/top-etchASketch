@@ -1,7 +1,18 @@
+body {
+    width: 960px;
+}
+
+button {
+    display: block;
+    padding: 8px;
+    margin: 8px auto;
+}
+
 #container {
     display: flex;
     flex-wrap: wrap;
-    width: 544px;
+    flex-direction: row;
+    width: 960px;
 }
 
 #container div {
