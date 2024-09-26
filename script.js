@@ -63,9 +63,9 @@ function setDivEvents() {
         });
     
         // Optionnel : Réinitialiser la couleur lors du "mouseout" (quand la souris quitte l'élément)
-        div.addEventListener("mouseout", (event) => {
-            div.style.backgroundColor = ""; // Remettre la couleur d'origine
-        });
+//        div.addEventListener("mouseout", (event) => {
+//            div.style.backgroundColor = ""; // Remettre la couleur d'origine
+//        });
     });
 
 }
