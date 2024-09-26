@@ -17,7 +17,7 @@ function nouvelleGrille() {
     let nombre = parseInt(prompt("Quelle taille de grille ?"), 10);
 
     // Vérifier si la valeur entrée est un nombre valide
-    if (!Number.isInteger(nombreParLigne) || nombreParLigne <= 0) {
+    if (!Number.isInteger(nombre) || nombre <= 0) {
         alert("Veuillez entrer un nombre valide !");
         return;
     }
@@ -27,16 +27,17 @@ function nouvelleGrille() {
     
 }
 
+
 // Fonction pour créer une grille carrée avec le nombre de cases par ligne spécifié
-function createGrid(nombreParLigne) {
+function createGrid(nombre) {
     // Supprimer l'ancienne grille
     container.innerHTML = '';
 
     // Calculer la largeur et la hauteur de chaque case en fonction de la taille de la grille
-    let caseSize = 100 / nombreParLigne; // En pourcentage pour adapter à Flexbox
+    let caseSize = 100 / nombre; // En pourcentage pour adapter à Flexbox
 
     // Calculer le nombre total de divs nécessaires
-    let totalCases = nombreParLigne * nombreParLigne;
+    let totalCases = nombre * nombre;
 
     // Créer la nouvelle grille
     for (let i = 1; i <= totalCases; i++) {
