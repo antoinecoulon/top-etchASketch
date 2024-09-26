@@ -11,14 +11,12 @@ button {
 #container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     width: 960px;
+    height: 960px;
+    border: 1px solid black;
 }
 
-#container div {
-    border: 1px solid black;
-    margin-right: -1px;
-    margin-bottom: -1px;
-    width: 32px;
-    height: 32px;
+.divElement {
+    box-sizing: border-box; /* Assure que le padding et la bordure n'affectent pas la taille */
+    border: 1px solid #ccc; /* Bordure entre les divs */
 }
