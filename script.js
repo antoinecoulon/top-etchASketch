@@ -52,14 +52,24 @@ function createGrid(nombre) {
     setDivEvents();
 }
 
+// Fonction pour générer une couleur aléatoire en format hexadécimal
+function generateRandomColor() {
+    let letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+
 // Fonction pour ajouter le HOVER
 function setDivEvents() {
-
     const divElement = document.querySelectorAll(".divElement");
-
+    let randomColor = generateRandomColor();
     divElement.forEach(div => {
         div.addEventListener("mouseover", (event) => {
-            div.style.backgroundColor = "#eec68b"; // Modifier le style directement
+            div.style.backgroundColor = randomColor; // Utiliser une couleur aléatoire à chaque survol
         });
     
         // Optionnel : Réinitialiser la couleur lors du "mouseout" (quand la souris quitte l'élément)
