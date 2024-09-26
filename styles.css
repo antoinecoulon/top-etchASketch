@@ -18,5 +18,5 @@ button {
 
 .divElement {
     box-sizing: border-box; /* Assure que le padding et la bordure n'affectent pas la taille */
-    border: 1px solid #ccc; /* Bordure entre les divs */
+    border: 1px solid #000; /* Bordure entre les divs */
 }
