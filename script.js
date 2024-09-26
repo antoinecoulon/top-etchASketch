@@ -17,8 +17,8 @@ function nouvelleGrille() {
     let nombre = parseInt(prompt("Quelle taille de grille ?"), 10);
 
     // Vérifier si la valeur entrée est un nombre valide
-    if (!Number.isInteger(nombre) || nombre <= 0) {
-        alert("Veuillez entrer un nombre valide !");
+    if (!Number.isInteger(nombre) || nombre <= 0 || nombre > 100) {
+        alert("Veuillez entrer un nombre valide entre 1 et 100 !");
         return;
     }
 
